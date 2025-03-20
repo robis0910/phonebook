@@ -103,7 +103,7 @@ const generateId = () => {
 }
 
 //start
-const PORT = 3001 || 3001
+const PORT = 3001 || process.env.PORT
 app.listen(PORT, () => {
 console.log(`Server running on port ${PORT}`)
 })
