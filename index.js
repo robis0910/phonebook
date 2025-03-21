@@ -31,7 +31,7 @@ let persons = [
 
 //gets
 app.get('/', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+  response.sendFile('/dist/index.html')
 });
 app.get('/api/persons', (request, response) => {
     if (persons) {
