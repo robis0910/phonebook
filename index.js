@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 
 //creates js objects from json data in response body
 app.use(express.json())
+app.use(cors())
 
 let persons = [
     { 
